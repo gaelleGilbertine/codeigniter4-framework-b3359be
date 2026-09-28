@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bibliothèque – client REST</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 760px; margin: 2rem auto; padding: 0 1rem; color: #0C101F; }
+    h1 { color: #222E76; }
+    form { display: grid; grid-template-columns: 1fr 1fr 110px auto; gap: .5rem; margin: 1rem 0; }
+    input, button { padding: .5rem; font: inherit; }
+    button { background: #222E76; color: #fff; border: 0; border-radius: 4px; cursor: pointer; }
+    button.suppr { background: #b3261e; }
+    li { display: flex; justify-content: space-between; align-items: center; padding: .4rem 0; border-bottom: 1px solid #eee; }
+    #message { min-height: 1.5rem; }
+    .erreur { color: #b3261e; }
+    .ok { color: #3d7a0f; }
+  </style>
+</head>
+<body>
+  <h1>Bibliothèque</h1>
+
+  <form id="form-livre">
+    <input name="titre" placeholder="Titre">
+    <input name="auteur" placeholder="Auteur">
+    <input name="annee" placeholder="Année">
+    <button type="submit">Ajouter</button>
+  </form>
+
+  <p id="message"></p>
+  <ul id="liste"></ul>
+
+  <script src="app.js"></script>
+</body>
+</html>

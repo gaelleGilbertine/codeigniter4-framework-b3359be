@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Niveau 2 – client JSONPlaceholder</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 760px; margin: 2rem auto; padding: 0 1rem; }
+    h1 { color: #222E76; }
+    form { display: grid; grid-template-columns: 1fr 2fr auto; gap: .5rem; margin: 1rem 0; }
+    input, button { padding: .5rem; font: inherit; }
+    li { display: flex; justify-content: space-between; gap: 1rem; padding: .4rem 0; border-bottom: 1px solid #eee; }
+    .erreur { color: #b3261e; } .ok { color: #3d7a0f; }
+  </style>
+</head>
+<body>
+  <h1>Articles (JSONPlaceholder)</h1>
+  <form id="form-article">
+    <input name="title" placeholder="Titre">
+    <input name="body" placeholder="Contenu">
+    <button type="submit">Publier</button>
+  </form>
+  <p id="message"></p>
+  <ul id="liste"></ul>
+  <script src="app.js"></script>
+</body>
+</html>
